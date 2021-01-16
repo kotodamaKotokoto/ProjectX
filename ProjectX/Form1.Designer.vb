@@ -26,6 +26,7 @@ Partial Class Form1
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.TextBox2 = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
+        Me.ListView1 = New System.Windows.Forms.ListView()
         Me.SuspendLayout()
         '
         'Button1
@@ -60,11 +61,21 @@ Partial Class Form1
         Me.Label1.TabIndex = 3
         Me.Label1.Text = "文字コード(Shift-jis)"
         '
+        'ListView1
+        '
+        Me.ListView1.HideSelection = False
+        Me.ListView1.Location = New System.Drawing.Point(463, 12)
+        Me.ListView1.Name = "ListView1"
+        Me.ListView1.Size = New System.Drawing.Size(325, 149)
+        Me.ListView1.TabIndex = 4
+        Me.ListView1.UseCompatibleStateImageBehavior = False
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.ListView1)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.TextBox2)
         Me.Controls.Add(Me.TextBox1)
@@ -80,4 +91,5 @@ Partial Class Form1
     Friend WithEvents TextBox1 As TextBox
     Friend WithEvents TextBox2 As TextBox
     Friend WithEvents Label1 As Label
+    Friend WithEvents ListView1 As ListView
 End Class
