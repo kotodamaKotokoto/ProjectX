@@ -23,5 +23,10 @@
             sum += bytesData(i)
         Next
         MsgBox(forture_telling_str(sum Mod 5))
+
+        ' 文字コード出力
+        TextBox2.Text = BitConverter.ToString(bytesData)
     End Sub
+
+
 End Class
