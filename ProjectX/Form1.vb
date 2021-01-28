@@ -9,13 +9,8 @@
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         Dim str As String = TextBox1.Text
 
-        ' add method to forture-tekking(占い)
-        ' 大吉、中吉、小吉、凶、大凶　の５つをランダムでMsgBox（）で表示
-
         ' ランダム処理
         Dim bytesData As Byte()
-
-        Dim rnd As Random = New Random(1)
 
         'Shift JISとして文字列に変換
         bytesData = System.Text.Encoding.GetEncoding(932).GetBytes(str)
@@ -33,4 +28,11 @@
     End Sub
 
 
+
+    Private Sub TextBox3_KeyPress(sender As Object, e As KeyPressEventArgs) Handles TextBox3.KeyPress
+        ' 数値、BackSpaceのみ入力可能、それ以外は空欄に変更
+        If Not (IsNumeric(e.KeyChar) Or e.KeyChar = vbBack) Then
+            e.KeyChar = ""
+        End If
+    End Sub
 End Class
