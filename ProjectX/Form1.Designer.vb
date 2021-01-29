@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
-Partial Class Form1
+Partial Class Form
     Inherits System.Windows.Forms.Form
 
     'フォームがコンポーネントの一覧をクリーンアップするために dispose をオーバーライドします。
@@ -26,8 +26,8 @@ Partial Class Form1
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.TextBox2 = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
         Me.TextBox3 = New System.Windows.Forms.TextBox()
+        Me.Number_CheckBox = New System.Windows.Forms.CheckBox()
         Me.SuspendLayout()
         '
         'Button1
@@ -62,15 +62,6 @@ Partial Class Form1
         Me.Label1.TabIndex = 3
         Me.Label1.Text = "文字コード(Shift-jis)"
         '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(22, 107)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(62, 15)
-        Me.Label2.TabIndex = 4
-        Me.Label2.Text = "数値のみ"
-        '
         'TextBox3
         '
         Me.TextBox3.Location = New System.Drawing.Point(90, 100)
@@ -78,18 +69,28 @@ Partial Class Form1
         Me.TextBox3.Size = New System.Drawing.Size(204, 22)
         Me.TextBox3.TabIndex = 5
         '
-        'Form1
+        'Number_CheckBox
+        '
+        Me.Number_CheckBox.AutoSize = True
+        Me.Number_CheckBox.Location = New System.Drawing.Point(300, 102)
+        Me.Number_CheckBox.Name = "Number_CheckBox"
+        Me.Number_CheckBox.Size = New System.Drawing.Size(84, 19)
+        Me.Number_CheckBox.TabIndex = 6
+        Me.Number_CheckBox.Text = "数値のみ"
+        Me.Number_CheckBox.UseVisualStyleBackColor = True
+        '
+        'Form
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.Number_CheckBox)
         Me.Controls.Add(Me.TextBox3)
-        Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.TextBox2)
         Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(Me.Button1)
-        Me.Name = "Form1"
+        Me.Name = "Form"
         Me.Text = "占いフォーム"
         Me.ResumeLayout(False)
         Me.PerformLayout()
@@ -100,6 +101,6 @@ Partial Class Form1
     Friend WithEvents TextBox1 As TextBox
     Friend WithEvents TextBox2 As TextBox
     Friend WithEvents Label1 As Label
-    Friend WithEvents Label2 As Label
     Friend WithEvents TextBox3 As TextBox
+    Friend WithEvents Number_CheckBox As CheckBox
 End Class

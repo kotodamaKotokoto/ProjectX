@@ -1,4 +1,4 @@
-﻿Public Class Form1
+﻿Public Class Form
 
     Private forture_telling_list As New List(Of String)
 
@@ -30,9 +30,17 @@
 
 
     Private Sub TextBox3_KeyPress(sender As Object, e As KeyPressEventArgs) Handles TextBox3.KeyPress
-        ' 数値、BackSpaceのみ入力可能、それ以外は空欄に変更
-        If Not (IsNumeric(e.KeyChar) Or e.KeyChar = vbBack) Then
-            e.KeyChar = ""
+
+        If Number_CheckBox.Checked Then
+            ' 数値、BackSpaceのみ入力可能、それ以外は空欄に変更
+            If Not (IsNumeric(e.KeyChar) Or e.KeyChar = vbBack) Then
+                e.KeyChar = ""
+            End If
         End If
+    End Sub
+
+    Private Sub CheckBox1_CheckedChanged(sender As Object, e As EventArgs) Handles Number_CheckBox.CheckedChanged
+        ' テキストボックスの文字を削除
+        TextBox3.Text = ""
     End Sub
 End Class
