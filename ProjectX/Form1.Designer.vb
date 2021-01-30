@@ -30,6 +30,7 @@ Partial Class Form
         Me.Number_CheckBox = New System.Windows.Forms.CheckBox()
         Me.FilePathText = New System.Windows.Forms.TextBox()
         Me.FilePathButton = New System.Windows.Forms.Button()
+        Me.Button2 = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'Button1
@@ -97,11 +98,21 @@ Partial Class Form
         Me.FilePathButton.Text = "ファイルを開く"
         Me.FilePathButton.UseVisualStyleBackColor = True
         '
+        'Button2
+        '
+        Me.Button2.Location = New System.Drawing.Point(582, 102)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(75, 23)
+        Me.Button2.TabIndex = 9
+        Me.Button2.Text = "Button2"
+        Me.Button2.UseVisualStyleBackColor = True
+        '
         'Form
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.FilePathButton)
         Me.Controls.Add(Me.FilePathText)
         Me.Controls.Add(Me.Number_CheckBox)
@@ -125,4 +136,5 @@ Partial Class Form
     Friend WithEvents Number_CheckBox As CheckBox
     Friend WithEvents FilePathText As TextBox
     Friend WithEvents FilePathButton As Button
+    Friend WithEvents Button2 As Button
 End Class
