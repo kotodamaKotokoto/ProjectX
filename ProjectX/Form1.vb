@@ -43,4 +43,8 @@
         ' テキストボックスの文字を削除
         TextBox3.Text = ""
     End Sub
+
+    Private Sub FilePathButton_Click(sender As Object, e As EventArgs) Handles FilePathButton.Click
+        FilePathText.Text = GetFilePath()
+    End Sub
 End Class

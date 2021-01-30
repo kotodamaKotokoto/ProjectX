@@ -28,13 +28,15 @@ Partial Class Form
         Me.Label1 = New System.Windows.Forms.Label()
         Me.TextBox3 = New System.Windows.Forms.TextBox()
         Me.Number_CheckBox = New System.Windows.Forms.CheckBox()
+        Me.FilePathText = New System.Windows.Forms.TextBox()
+        Me.FilePathButton = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(118, 11)
+        Me.Button1.Location = New System.Drawing.Point(118, 12)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(110, 23)
+        Me.Button1.Size = New System.Drawing.Size(110, 22)
         Me.Button1.TabIndex = 0
         Me.Button1.Text = "占い開始！"
         Me.Button1.UseVisualStyleBackColor = True
@@ -79,11 +81,29 @@ Partial Class Form
         Me.Number_CheckBox.Text = "数値のみ"
         Me.Number_CheckBox.UseVisualStyleBackColor = True
         '
+        'FilePathText
+        '
+        Me.FilePathText.Location = New System.Drawing.Point(90, 138)
+        Me.FilePathText.Name = "FilePathText"
+        Me.FilePathText.Size = New System.Drawing.Size(204, 22)
+        Me.FilePathText.TabIndex = 7
+        '
+        'FilePathButton
+        '
+        Me.FilePathButton.Location = New System.Drawing.Point(301, 136)
+        Me.FilePathButton.Name = "FilePathButton"
+        Me.FilePathButton.Size = New System.Drawing.Size(134, 24)
+        Me.FilePathButton.TabIndex = 8
+        Me.FilePathButton.Text = "ファイルを開く"
+        Me.FilePathButton.UseVisualStyleBackColor = True
+        '
         'Form
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.FilePathButton)
+        Me.Controls.Add(Me.FilePathText)
         Me.Controls.Add(Me.Number_CheckBox)
         Me.Controls.Add(Me.TextBox3)
         Me.Controls.Add(Me.Label1)
@@ -103,4 +123,6 @@ Partial Class Form
     Friend WithEvents Label1 As Label
     Friend WithEvents TextBox3 As TextBox
     Friend WithEvents Number_CheckBox As CheckBox
+    Friend WithEvents FilePathText As TextBox
+    Friend WithEvents FilePathButton As Button
 End Class
